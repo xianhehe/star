@@ -1,0 +1,520 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+     display: -webkit-box;/* android 2.1-3.0, ios 3.2-4.3 */
+  display: -webkit-flex;/* Chrome 21+ */
+  display: -ms-flexbox;/* WP IE 10 */
+  display: flex;/* android 4.4 */
+  -webkit-box-orient: vertical;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;/* Chrome 21+ */
+  -ms-flex-direction: column;/* WP IE 10 */
+  flex-direction: column;/* android 4.4 */
+    font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+    
+}
+html {
+    font-size: 100px;
+    //background: #f2f2f2;
+    background: #fff;
+}
+body {
+    display: -moz-box;
+    /* Firefox */
+    display: -ms-flexbox;
+    /* IE10 */
+    display: -webkit-box;
+    /* Safari */
+    display: -webkit-flex;
+    /* Chrome, WebKit */
+    display: box;
+    display: flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    /* android 2.1-3.0, ios 3.2-4.3 */
+    -webkit-flex-direction: column;
+    /* Chrome 21+ */
+    -ms-flex-direction: column;
+    /* WP IE 10 */
+    -moz-flex-direction: column;
+    /* FF */
+    flex-direction: column;
+    /* android 4.4 */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .messHeader {
+        width: 100%;
+        height: 0.44rem;
+        background-color: #14141b;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: box;
+        display: flexbox;
+        display: flex;
+        >span {
+            width: 0.44rem;
+            height: 0.44rem;
+            text-align: center;
+            line-height: 0.44rem;
+            color: #fff;
+            font-size: 0.18rem;
+        }
+        >h2 {
+            webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            -moz-box-flex: 1;
+            flex: 1;
+            height: 0.44rem;
+            text-align: center;
+            line-height: 0.44rem;
+            color: #868686;
+            font-size: 0.16rem;
+            font-weight: 100;
+        }
+    }
+    .content {
+        webkit-box-flex: 1;
+        /* android 2.1-3.0, ios 3.2-4.3 */
+        -webkit-flex: 1;
+        /* Chrome 21+ */
+        -ms-flex: 1;
+        /* WP IE 10 */
+        -moz-box-flex: 1;
+        /* FF */
+        flex: 1;
+        /* android 4.4 */
+        width: 100%;
+        background-color: #282938;
+        overflow: hidden;
+        div.box1 {
+            width: 100%;
+            height: 0.9rem;
+            background: #2b2938;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex-direction: column;
+            /* Chrome 21+ */
+            -ms-flex-direction: column;
+            /* WP IE 10 */
+            -moz-flex-direction: column;
+            /* FF */
+            flex-direction: column;
+            /* android 4.4 */
+            text-align: center;
+            font: 14px/18px "造字工房朗倩（非商用）常规体", Tahoma, Helvetica, Arial, Verdana, "\5b8b\4f53", sans-serif;
+            font-weight: 500;
+            p {
+                width: 100%;
+                letter-spacing: 0.02rem;
+                &:nth-child(1) {
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.1rem;
+                    color: #f01e88;
+                    font-size: 0.17rem;
+                }
+                &:nth-child(2) {
+                    color: white;
+                    margin-bottom: 0.14rem;
+                    font-size: 0.22rem;
+                }
+            }
+        }
+        div.box2 {
+            width: 100%;
+            height: 2.34rem;
+            background: #2b2938;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex-direction: column;
+            /* Chrome 21+ */
+            -ms-flex-direction: column;
+            /* WP IE 10 */
+            -moz-flex-direction: column;
+            /* FF */
+            flex-direction: column;
+            /* android 4.4 */
+            text-align: center;
+            display: flex;
+            position: relative;
+            img.box2img {
+                display: block;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -1%;
+                left: 47%;
+            }
+            .spans {
+                height: 0.38rem;
+                width: 100%;
+                display: -moz-box;
+                /* Firefox */
+                display: -ms-flexbox;
+                /* IE10 */
+                display: -webkit-box;
+                /* Safari */
+                display: -webkit-flex;
+                /* Chrome, WebKit */
+                display: box;
+                display: flexbox;
+                display: flex;
+                img {
+                    display: block;
+                    width: 13px;
+                    height: 38px;
+                    margin: auto;
+                }
+            }
+            div.logobg {
+                margin: auto;
+                // width: 3.17rem;
+                width: 90%;
+                height: 1.76rem;
+                background: #22202d;
+                border: 2px solid #1a1923;
+                border-radius: 2px;
+                box-shadow: 0 0 3px #1a1923;
+                img {
+                    display: block;
+                    width: 95%;
+                    height: 94%;
+                    margin: 5px auto;
+                }
+            }
+            .box2foot {
+                height: 0.2rem;
+                width: 2px;
+                margin: auto;
+                background: rgb(235,30,134);
+            }
+        }
+        div.box3 {
+            width: 100%;
+            background: #22202d;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex-direction: column;
+            /* Chrome 21+ */
+            -ms-flex-direction: column;
+            /* WP IE 10 */
+            -moz-flex-direction: column;
+            /* FF */
+            flex-direction: column;
+            /* android 4.4 */
+            text-align: center;
+            p {
+                width: 90%;
+                margin: auto;
+                text-align: justify;
+                font-size: 11px;
+                text-indent: 0.25rem;
+                color: #e3e3e3;
+                line-height: 0.21rem;
+                margin-top: 0.1rem;
+                &:nth-child(2) {
+                    margin-bottom: 0.1rem;
+                }
+            }
+        }
+        div.box4 {
+            width: 100%;
+            height: 7.78rem;
+            background: #2b2938;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex-direction: column;
+            /* Chrome 21+ */
+            -ms-flex-direction: column;
+            /* WP IE 10 */
+            -moz-flex-direction: column;
+            /* FF */
+            flex-direction: column;
+            /* android 4.4 */
+            text-align: center;
+            background: url("../images/match_image_bg.png") no-repeat center;
+            background-size: cover;
+            position: relative;
+            div.head {
+                width: 100%;
+                height: 0.62rem;
+                background: #2b2938;
+                display: -moz-box;
+                /* Firefox */
+                display: -ms-flexbox;
+                /* IE10 */
+                display: -webkit-box;
+                /* Safari */
+                display: -webkit-flex;
+                /* Chrome, WebKit */
+                display: box;
+                display: flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                /* android 2.1-3.0, ios 3.2-4.3 */
+                -webkit-flex-direction: column;
+                /* Chrome 21+ */
+                -ms-flex-direction: column;
+                /* WP IE 10 */
+                -moz-flex-direction: column;
+                /* FF */
+                flex-direction: column;
+                /* android 4.4 */
+                p {
+                    &:nth-child(1) {
+                        width: 2px;
+                        height: 0.25rem;
+                        margin: auto;
+                        background: #F01E88;
+                    }
+                    &:nth-child(2) {
+                        webkit-box-flex: 1;
+                        /* android 2.1-3.0, ios 3.2-4.3 */
+                        -webkit-flex: 1;
+                        /* Chrome 21+ */
+                        -ms-flex: 1;
+                        /* WP IE 10 */
+                        -moz-box-flex: 1;
+                        /* FF */
+                        flex: 1;
+                        /* android 4.4 */
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 37px;
+                        padding-top: 5px;
+                        font: 14px/18px "造字工房朗倩（非商用）常规体", Tahoma, Helvetica, Arial, Verdana, "\5b8b\4f53", sans-serif;
+                        font-weight: 500;
+                        color: #f01e88;
+                        letter-spacing: 0.02rem;
+                    }
+                }
+            }
+            div.center {
+                display: -moz-box;
+                /* Firefox */
+                display: -ms-flexbox;
+                /* IE10 */
+                display: -webkit-box;
+                /* Safari */
+                display: -webkit-flex;
+                /* Chrome, WebKit */
+                display: box;
+                display: flexbox;
+                display: flex;
+                height: 7.16rem;
+                div.left {
+                    webkit-box-flex: 1;
+                    /* android 2.1-3.0, ios 3.2-4.3 */
+                    -webkit-flex: 1;
+                    /* Chrome 21+ */
+                    -ms-flex: 1;
+                    /* WP IE 10 */
+                    -moz-box-flex: 1;
+                    /* FF */
+                    flex: 1;
+                    /* android 4.4 */
+                    position: relative;
+                    border-right: 1px solid #F01E88;
+                    img {
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 0.3rem;
+                        right: -0.09rem;
+                    }
+                    img.left3img {
+                        top: 1.8rem;
+                        right: -0.09rem;
+                    }
+                    img.left2img {
+                        top: 3.15rem;
+                        right: -0.09rem;
+                    }
+                    img.left4img {
+                        top: 4.6rem;
+                        right: -0.09rem;
+                    }
+                    img.left5img {
+                        top: 6.3rem;
+                        right: -0.09rem;
+                    }
+                    div.int {
+                        position: absolute;
+                        top: 0.25rem;
+                        right: 0.05rem;
+                        transform: scale(0.9);
+                        p {
+                            width: 100%;
+                            font-size: 11px;
+                            color: #e3e3e3;
+                            line-height: 0.21rem;
+                            text-align: right;
+                            font-weight: 200;
+                            &:nth-child(1) {
+                                color: #F01E88;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                    div.left2 {
+                        top: 3.1rem;
+                        p {
+                            &:nth-child(1) {
+                                color: #F01E88;
+                            }
+                        }
+                    }
+                    div.left3 {
+                        top: 6.25rem;
+                        p {
+                            &:nth-child(1) {
+                                color: #F01E88;
+                            }
+                        }
+                    }
+                }
+                div.right {
+                    webkit-box-flex: 1;
+                    /* android 2.1-3.0, ios 3.2-4.3 */
+                    -webkit-flex: 1;
+                    /* Chrome 21+ */
+                    -ms-flex: 1;
+                    /* WP IE 10 */
+                    -moz-box-flex: 1;
+                    /* FF */
+                    flex: 1;
+                    /* android 4.4 */
+                    border-left: 1px solid #F01E88;
+                    position: relative;
+                    div.int {
+                        border: none;
+                        position: absolute;
+                        top: 1.75rem;
+                        left: 0.05rem;
+                        transform: scale(0.9);
+                        p {
+                            width: 100%;
+                            font-size: 11px;
+                            color: #e3e3e3;
+                            line-height: 0.21rem;
+                            text-align: left;
+                            font-weight: 200;
+                            &:nth-child(1) {
+                                color: #F01E88;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                    div.right2 {
+                        top: 4.55rem;
+                    }
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        div.foot {
+            width: 100%;
+            height: 0.73rem!important;
+            background: #22202d;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex-direction: column;
+            /* Chrome 21+ */
+            -ms-flex-direction: column;
+            /* WP IE 10 */
+            -moz-flex-direction: column;
+            /* FF */
+            flex-direction: column;
+            /* android 4.4 */
+            text-align: center;
+            background-size: 100% auto;
+            font-size: 11px;
+            text-indent: 0.25rem;
+            color: #e3e3e3;
+            line-height: 0.21rem;
+            p {
+                &:nth-child(1) {
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+}

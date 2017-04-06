@@ -1,0 +1,265 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 100px;
+  background: #fff;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #2b2938;
+  display: -moz-box;
+  /* Firefox */
+
+  display: -ms-flexbox;
+  /* IE10 */
+
+  display: -webkit-box;
+  /* Safari */
+
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+
+  display: box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+
+  -ms-flex-direction: column;
+  /* WP IE 10 */
+
+  -moz-flex-direction: column;
+  /* FF */
+
+  flex-direction: column;
+  /* android 4.4 */
+
+  overflow: hidden;
+}
+body .seaHeader {
+  width: 100%;
+  height: 0.44rem;
+  background-color: #14141b;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body .seaHeader > span {
+  width: 0.44rem;
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  color: #fff;
+  font-size: 0.18rem;
+}
+body .seaHeader > span:last-child {
+  font-size: 0.13rem;
+}
+body .seaHeader > h2 {
+  webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  color: #fff;
+  font-size: 0.16rem;
+  font-weight: 100;
+}
+body .content {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+
+  -ms-flex: 1;
+  /* WP IE 10 */
+
+  -moz-box-flex: 1;
+  /* FF */
+
+  flex: 1;
+  /* android 4.4 */
+
+  width: 100%;
+  overflow: hidden;
+  background-color: #282938;
+}
+body .content .pull {
+  text-align: center;
+  height: 0.3rem;
+  display: -webkit-box;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+
+  display: -webkit-flex;
+  /* Chrome 21+ */
+
+  display: -ms-flexbox;
+  /* WP IE 10 */
+
+  display: flex;
+  /* android 4.4 */
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 0.12rem;
+  color: #fff;
+  background-color: #2b2938;
+}
+body .content .pull img {
+  display: inline-block;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+  height: 0.15rem;
+  width: 0.15rem;
+}
+body .content .pull span {
+  display: inline-block;
+}
+body .content .drop-down {
+  text-align: center;
+  height: 0.3rem;
+  display: -webkit-box;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+
+  display: -webkit-flex;
+  /* Chrome 21+ */
+
+  display: -ms-flexbox;
+  /* WP IE 10 */
+
+  display: flex;
+  /* android 4.4 */
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 0.12rem;
+  color: #fff;
+  background-color: #2b2938;
+}
+body .content .drop-down img {
+  display: inline-block;
+  /*transform: rotate(0deg);*/
+
+  /*-webkit-transform: rotate(0deg);*/
+
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+  height: 0.15rem;
+  width: 0.15rem;
+}
+body .content .drop-down span {
+  display: inline-block;
+}
+body .content .sysNews {
+  width: 100%;
+}
+body .content .sysNews .backImg {
+  width: 100%;
+  height: 4.8rem;
+  background: url("http://192.168.1.112:8081/star/staroutlook/css/../images/sweet.jpg") no-repeat center;
+  position: relative;
+}
+body .content .sysNews .backImg span {
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  text-align: center;
+  font-size: 0.14rem;
+  color: #504f5b;
+  line-height: 0.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.8rem;
+}
+body .content .sysNews li {
+  display: -moz-box;
+  /* Firefox */
+
+  display: -ms-flexbox;
+  /* IE10 */
+
+  display: -webkit-box;
+  /* Safari */
+
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+
+  display: box;
+  display: flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.23);
+  padding: 0 0.13rem;
+  height: 0.52rem;
+}
+body .content .sysNews li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .content .sysNews li a > img {
+  margin: 0.05rem 0;
+  width: 0.41rem;
+  height: 0.41rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+body .content .sysNews li a .reName {
+  width: 100%;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  padding-left: 0.1rem;
+  font-size: 0.14rem;
+  color: #fff;
+  text-align: left;
+}
+textarea {
+  width: 400px;
+  height: 300px;
+  font-size: 12px;
+}

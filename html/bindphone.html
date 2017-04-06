@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>绑定手机</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet/less" type="text/css" href="../css/m-bindphone.less" />
+		<script src="../js/less-1.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css"/>
+	</head>
+	<body>		
+		<div class="messHeader">
+			<span class="iconfont" onclick="javascript:history.go(-1);">&#xe602;</span>
+			<h2 class="title">绑定手机</h2>
+			<span></span>
+		</div>
+		<div class="content">
+			<div>
+				<form method="get">
+					<div class="iconfont phone">&#xe608;</div>
+					<div class="iconfont pass">&#xe608;</div>
+					<input class='bind-phone' type="text" placeholder="请输入手机号"/>
+					<input class='bind-password' type="password" placeholder="请输入密码,6-8位数字和字符" />
+					<div class='yan'>
+						<input class='code' type="text" placeholder="请输入验证码" />
+						<div class="iconfont icon-close">&#xe608;</div>
+						<button class="btn-code" type='button'>发送验证码</button>
+					</div>
+					<button type="button" class='btn-confirm'>确认</button>
+				</form>
+			</div>				
+		</div>		
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bindphone.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/layer/layer.m.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,319 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 100px;
+  background: #fff;
+}
+body {
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+  -ms-flex-direction: column;
+  /* WP IE 10 */
+  -moz-flex-direction: column;
+  /* FF */
+  flex-direction: column;
+  /* android 4.4 */
+  height: 100%;
+  width: 100%;
+  background: #282938;
+  overflow: hidden;
+}
+body .seaHeader {
+  width: 100%;
+  height: 0.44rem;
+  background-color: #14141b;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body .seaHeader > h2 {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  color: #fff;
+  font-size: 0.16rem;
+  margin: 0;
+}
+body section {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  width: 100%;
+  position: relative;
+  background: #282938;
+}
+body section .reContent {
+  width: 100%;
+  padding-bottom: 0.07rem;
+  background-color: #282938;
+}
+body section .reContent .reHeader {
+  width: 100%;
+  height: .54rem;
+  background-color: #373846;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.07rem 0.13rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+  -ms-flex-direction: column;
+  /* WP IE 10 */
+  -moz-flex-direction: column;
+  /* FF */
+  flex-direction: column;
+  /* android 4.4 */
+}
+body section .reContent .reHeader > ul {
+  width: 100%;
+  height: 0.41rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body section .reContent .reHeader > ul li:nth-child(1) {
+  width: 0.41rem;
+  height: 0.41rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body section .reContent .reHeader > ul li:nth-child(1) > a img {
+  width: 0.41rem;
+  height: 0.41rem;
+  display: block;
+  margin: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+body section .reContent .reHeader > ul li:nth-child(2) {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 0.41rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0.1rem;
+}
+body section .reContent .reHeader > ul li:nth-child(2) .reName {
+  width: 100%;
+  height: 0.41rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body section .reContent .reHeader > ul li:nth-child(2) .reName span {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  line-height: 0.38rem;
+  height: 100%;
+}
+body section .reContent .reHeader > ul li:nth-child(2) .reName span:nth-child(1) {
+  font-size: 0.14rem;
+  color: #fff;
+  text-align: left;
+}
+body section .reContent .reHeader > ul li:nth-child(2) .reName span:nth-child(2) {
+  font-size: 0.12rem;
+  color: #ababab;
+  text-align: right;
+}
+body section .reContent .reHeader > ul li:nth-child(2) .reTime {
+  width: 100%;
+  height: 0.2;
+  line-height: 0.15rem;
+  font-size: 0.12rem;
+  color: #727272;
+}
+body section .reContent .reHeader > p.reMess {
+  width: 100%;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  font-size: 0.14rem;
+  color: #fff;
+}
+body section .reContent .reImg {
+  width: 100%;
+  position: relative;
+}
+body section .reContent .reImg video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body section .reContent .reImg > p.reMess {
+  width: 100%;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  font-size: 0.14rem;
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+body section .reContent .reShare {
+  width: 100%;
+  height: 0.39rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.12rem 0;
+  background-color: #373846;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+body section .reContent .reShare > li {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 0.15rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 0.01rem solid #808087;
+  line-height: 0.15rem;
+  font-size: 0.12rem;
+  color: #fff;
+  text-align: center;
+}
+body section .reContent .reShare > li > span {
+  display: inline-block;
+  width: 0.3rem;
+  text-align: center;
+  font-size: 0.14rem;
+}
+body section .reContent .reShare > li > span.rehear {
+  color: #f93271;
+}
+body section .reContent .reShare > li:last-child {
+  border-right: 0;
+}
+body #lastbest {
+  position: relative;
+}

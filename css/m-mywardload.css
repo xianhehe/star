@@ -1,0 +1,63 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #2b2938;
+}
+.mui-bar-nav {
+  background-color: #15141b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.mui-icon-left-nav {
+  color: #fff;
+}
+.mui-title {
+  color: #fff;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 0;
+}
+/*列表背景*/
+.mui-content,
+.mui-table-view-cell {
+  background-color: #3a3846;
+}
+/*边界线*/
+.mui-table-view-cell:after {
+  left: 0;
+}
+/*列表图*/
+.mui-table-view .mui-media-object {
+  width: 1.42rem;
+  height: 1.42rem;
+  max-width: 1.42rem;
+}
+.mui-media-body > p {
+  line-height: 0.48rem;
+}
+.viedoname {
+  font-size: 0.26rem;
+}
+/*两行视频名称样式*/
+.mui-table-view-cell > a:not(.mui-btn) {
+  white-space: normal;
+}
+.mui-media-body .tworow {
+  line-height: 0.3rem;
+}
+.author,
+.num {
+  font-size: 0.24rem;
+}
+.date {
+  font-size: 0.20rem;
+}
+.mui-table-view-cell {
+  padding: 0.25rem 0.24rem;
+}
+.mui-icon-extra {
+  color: #8F8F94;
+}
+.active {
+  color: #df236a;
+}

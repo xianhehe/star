@@ -1,0 +1,270 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-size: 100px;
+    //background: #f2f2f2;
+    background: #fff;
+}
+.m-feedback {
+    height: 100%;
+    width: 100%;
+    display: -moz-box;
+    /* Firefox */
+    display: -ms-flexbox;
+    /* IE10 */
+    display: -webkit-box;
+    /* Safari */
+    display: -webkit-flex;
+    /* Chrome, WebKit */
+    display: box;
+    display: flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    /* android 2.1-3.0, ios 3.2-4.3 */
+    -webkit-flex-direction: column;
+    /* Chrome 21+ */
+    -ms-flex-direction: column;
+    /* WP IE 10 */
+    -moz-flex-direction: column;
+    /* FF */
+    flex-direction: column;
+    /* android 4.4 */
+    overflow: hidden;
+    background-color: #2b2938;
+    .testHeader {
+        width: 100%;
+        height: 0.44rem;
+        background-color: #14141b;
+        display: -moz-box;
+        /* Firefox */
+        display: -ms-flexbox;
+        /* IE10 */
+        display: -webkit-box;
+        /* Safari */
+        display: -webkit-flex;
+        /* Chrome, WebKit */
+        display: box;
+        display: flexbox;
+        display: flex;
+        >span {
+            width: 0.44rem;
+            height: 0.44rem;
+            text-align: center;
+            line-height: 0.44rem;
+            color: #fff;
+            font-size: 0.2rem;
+        }
+        >h2 {
+            webkit-box-flex: 1;
+            /* android 2.1-3.0, ios 3.2-4.3 */
+            -webkit-flex: 1;
+            /* Chrome 21+ */
+            -ms-flex: 1;
+            /* WP IE 10 */
+            -moz-box-flex: 1;
+            /* FF */
+            flex: 1;
+            /* android 4.4 */
+            height: 0.44rem;
+            text-align: center;
+            line-height: 0.44rem;
+            color: #868686;
+            font-size: 0.16rem;
+            font-weight: 100;
+        }
+    }
+    .sContent {
+        webkit-box-flex: 1;
+        /* android 2.1-3.0, ios 3.2-4.3 */
+        -webkit-flex: 1;
+        /* Chrome 21+ */
+        -ms-flex: 1;
+        /* WP IE 10 */
+        -moz-box-flex: 1;
+        /* FF */
+        flex: 1;
+        /* android 4.4 */
+        width: 100%;
+        background-color: #282938;
+        .rowsText {
+            width: 100%;
+            height: 1.3rem;
+            background-color: #3a3846;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0.2rem 0.15rem;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            .rowsLeft {
+                webkit-box-flex: 1;
+                /* android 2.1-3.0, ios 3.2-4.3 */
+                -webkit-flex: 1;
+                /* Chrome 21+ */
+                -ms-flex: 1;
+                /* WP IE 10 */
+                -moz-box-flex: 1;
+                /* FF */
+                flex: 1;
+                /* android 4.4 */
+                height: 0.9rem;
+                >textarea {
+                    width: 100%;
+                    height: 0.9rem;
+                    font-size: 0.12rem;
+                    line-height: 0.14rem;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    resize: none;
+                    background-color: #3a3846;
+                }
+            }
+            .rowRight {
+                height: 0.9rem;
+                font-size: 0.2rem;
+                color: #fff;
+                text-align: center;
+                line-height: 0.9rem;
+                width: 0.2rem;
+                display: none;
+            }
+        }
+        .singleText {
+            width: 100%;
+            height: 0.45rem;
+            border-bottom: 0.01rem solid #5c5b66;
+            background-color: #3a3846;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 0.15rem;
+            input {
+                    width: 100%;
+                    border: none;
+                    background-color: #3a3846;
+                    color: #fff;
+                    font-size: 0.12rem;
+                }
+//          .singleft {
+//              webkit-box-flex: 1;
+//              /* android 2.1-3.0, ios 3.2-4.3 */
+//              -webkit-flex: 1;
+//              /* Chrome 21+ */
+//              -ms-flex: 1;
+//              /* WP IE 10 */
+//              -moz-box-flex: 1;
+//              /* FF */
+//              flex: 1;
+//              /* android 4.4 */
+//              height: 0.45rem;
+//              -webkit-box-sizing: border-box;
+//              -moz-box-sizing: border-box;
+//              box-sizing: border-box;
+//              padding: 0.1rem 0;
+//              >input {
+//                  width: 100%;
+//                  height: 0.25rem;
+//                  border: none;
+//                  background-color: #3a3846;
+//                  color: #fff;
+//                  font-size: 0.12rem;
+//              }
+//          }
+//          .sRight {
+//              height: 0.45rem;
+//              font-size: 0.2rem;
+//              color: #fff;
+//              text-align: center;
+//              line-height: 0.45rem;
+//              width: 0.2rem;
+//              display: none;
+//          }
+        }
+        .mTest {
+            height: 0.34rem;
+            background-color: #14141b;
+            line-height: 0.34rem;
+            color: #ec1c60;
+            font-size: 0.14rem;
+            text-indent: 0.24rem;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 0;
+                height: 0.12rem;
+                border-left: #ec1c60 solid 0.02rem;
+                top: 0.11rem;
+                left: 0.15rem;
+            }
+        }
+        .testSub {
+            width: 100%;
+            height: 1.3rem;
+            display: -moz-box;
+            /* Firefox */
+            display: -ms-flexbox;
+            /* IE10 */
+            display: -webkit-box;
+            /* Safari */
+            display: -webkit-flex;
+            /* Chrome, WebKit */
+            display: box;
+            display: flexbox;
+            display: flex;
+            >p {
+                width: 90%;
+                height: 0.45rem;
+                margin: auto;
+                line-height: 0.5rem;
+                text-align: center;
+                color: #fff;
+                font-size: 0.15rem;
+                background-color: #605f6a;
+                -webkit-border-radius: 0.05rem;
+                -moz-border-radius: 0.05rem;
+                border-radius: 0.05rem;
+            }
+        }
+    }
+}

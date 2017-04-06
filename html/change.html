@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+	</head>
+
+	<body>
+
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">顶部选项卡-可左右拖动(div)</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider1"  class="mui-slider">
+				<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ">
+					<a class="mui-control-item" href="#item1mobile">待办公文</a>
+					<a class="mui-control-item" href="#item2mobile">已办公文</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">								
+								已办公文
+								
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div id="slider2" class="mui-slider">
+									<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+										<a class="mui-control-item mui-active" href="#item4mobile">1</a>
+										<a class="mui-control-item" href="#item5mobile">2</a>
+										<a class="mui-control-item" href="#item6mobile">3</a>
+									</div>
+									<div class="mui-slider-group">
+										<div id="item4mobile" class="mui-slider-item mui-control-content mui-active">
+											<div class="mui-scroll-wrapper">
+												<div class="mui-scroll">
+													1
+												</div>
+											</div>											
+										</div>
+										<div id="item5mobile" class="mui-slider-item mui-control-content">
+											<div class="mui-scroll-wrapper">
+												<div class="mui-scroll">
+													2
+												</div>
+											</div>											
+										</div>
+										<div id="item6mobile" class="mui-slider-item mui-control-content">
+											<div class="mui-scroll-wrapper">
+												<div class="mui-scroll">
+													3
+												</div>
+											</div>											
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+		document.querySelector('#item4mobile').addEventListener("swiperight",function(){
+			mui("#slider1").slider().gotoItem(0);
+		});
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="../css/m-myhome.less" />
+		<script src="../js/less-1.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/m-myhomevideo.less"/>
+		<style>
+			.backImg{
+			    width: 100%;
+			    height: 3rem;
+			    background: url(../images/sweet.jpg) no-repeat center;
+			    background-size: 60%;
+			}
+			.backImg span{
+				padding-top: 75%;
+			    display: block;
+			    width: 100%;
+			    height: 0.2rem;
+			    text-align: center;
+			    font-size: 0.2rem;
+			    color: #504f5b;
+			    line-height: 0.2rem;
+			}
+			#middlePopover{
+				display: none;
+			    bottom: 0;
+			    width: 100%;
+			    height: 200px;
+			}
+			.active >p{color:#cb2177;}
+			#home-hot-nav li p{margin-bottom:0;}
+			#home-hot-nav li{line-height:20px;}
+			#middlePopover{
+				left: 0;
+				bottom: 0;
+				border-radius: 0;
+			}	
+			/*li.mui-table-view-cell{
+				float: left;
+				width: 0.76rem;
+			}*/
+			
+			body{
+				background-color: #373846;
+			}
+			body #home-swiper #home-swiper1 #home-swiper2 #home-hot-swiper{
+				background-color: #373846;
+			}
+			.mui-pull-bottom-pocket{
+				background-color: #373846;
+			}
+
+			
+		</style>
+	</head>
+
+	<body id="pullre">
+		<div>		
+			<div class="reContent">
+				<div class="reImg" style="height: 100%;">
+					<img src="../images/img1.jpg" />
+					<div class="head">
+						<span class="iconfont">&#xe602;</span>
+					</div>
+				</div>
+				<div class='avator'></div>
+			</div>
+		
+		
+			<div class="swiper-container" id="home-swiper">
+				<div class="swiper-wrapper" id="home-swiper1">
+					<div class="swiper-slide" id="home-swiper2">
+						<nav>
+							<ul id="home-hot-nav">
+								<li class="active">
+									<p id="videoNum"></p>
+									<p>视频</p>
+								</li>
+								<li class='gotranslate'>
+									<p id="forwardNum"></p>
+									<p>转发</p>
+								</li>
+								<li>
+									<p id="attentionNum"></p>
+									<p>关注</p>
+								</li>
+								<li>
+									<p id="fansNum"></p>
+									<p>粉丝</p>
+								</li>
+							</ul>
+						</nav>
+						<div class="swiper-container" id="home-hot-swiper" ms-class-hide="showLoading">
+							<div class="swiper-wrapper">
+								<!-- 视频 -->														
+								<div class="swiper-slide" id="index-scroll">
+									<div>
+										<div>
+											<!--数据列表-->
+											<div id="videoTab" class="mui-table-view mui-table-view-chevron recommend">												
+											</div>
+										</div>
+									</div>																
+								</div>
+								
+								<!-- 转发 -->
+								<div class="swiper-slide" id="index-scroll1">								
+									<div>
+										<div class="mui-scroll">
+											<!--数据列表-->
+											<div id="forwardTab" class="mui-table-view mui-table-view-chevron recommend">
+												<!--<div class="reContent">
+													<div class="reHeader">
+														<ul>
+															<li><img src="../images/img1.jpg" /></li>
+															<li>
+																<p class="reName"><span>西单女孩</span><span class="yo-ico">2016-08-09</span></p>
+															</li>
+														</ul>
+													</div>
+													<div class="reImg">
+														<video src='../video/Vimeo.mp4' width="100%" height="100%" autobuffer autoplay="autoplay" style="position: relative;">
+															当前浏览器不支持 video直接播放，点击这里下载视频
+														</video>
+														<p class="reMess">论合作的重要性</p>
+													</div>
+													<ul class="reShare">
+														<li><span class="iconfont">&#xe60a;</span>分享</li>
+														<li class="gocomment"><span class="iconfont">&#xe610;</span>评论</li>
+														<li><span class="iconfont rehear" action-type="tap.dianzan">&#xe60b;</span>1988</li>
+													</ul>
+												</div>
+												<div class="reContent">
+													<div class="reHeader">
+														<ul>
+															<li><img src="../images/img1.jpg" /></li>
+															<li>
+																<p class="reName"><span>西单女孩</span><span class="yo-ico">2016-08-09</span></p>
+															</li>
+														</ul>
+													</div>
+													<div class="reImg">
+														<video src='../video/Vimeo.mp4' width="100%" height="100%" autobuffer autoplay="autoplay" style="position: relative;">
+															当前浏览器不支持 video直接播放，点击这里下载视频
+														</video>
+														<p class="reMess">论合作的重要性</p>
+													</div>
+													<ul class="reShare">
+														<li><span class="iconfont">&#xe60a;</span>分享</li>
+														<li class="gocomment"><span class="iconfont">&#xe610;</span>评论</li>
+														<li><span class="iconfont rehear" action-type="tap.dianzan">&#xe60b;</span>1988</li>
+													</ul>
+												</div>-->
+											</div>
+										</div>
+									</div>	
+								</div>
+								<!-- 关注 -->
+								<div class="swiper-slide" id="index-scroll2">
+									<div class="css3waterfall">
+										<div class="mui-scroll">
+											<!--数据列表-->
+											<div id="attentionTab" class="mui-table-view mui-table-view-chevron recommend">										
+											</div>
+										</div>
+									</div>							
+								</div>
+								<!-- 粉丝 -->
+								<div class="swiper-slide" id="index-scroll3">
+									<div class="css3waterfall">
+										<div class="mui-scroll">
+											<!--数据列表-->
+											<div id="followTab" class="mui-table-view mui-table-view-chevron recommend">										
+											</div>
+										</div>
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="middlePopover" class="mui-popover" style="left: 0;top: 0;">		
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell"><a href="#">Item1</a>
+							</li>
+							<li class="mui-table-view-cell"><a href="#">Item2</a>
+							</li>
+							<li class="mui-table-view-cell"><a href="#">Item3</a>
+							
+						</ul>
+					</div>
+				</div>
+			</div>				
+		</div>
+		
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>	
+		<script type="text/javascript" src="../js/layer/layer.m.js"></script>
+		<script src="../js/myhomevideo.js"></script>
+	</body>
+</html>

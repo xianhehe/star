@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-slider-group {
+				min-height: 100vh;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-slider parent-slider mui-content">
+			<nav class="mui-bar mui-bar-nav">
+				<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				
+					<a class="mui-control-item mui-active" href="#parent-item-1">父选项卡1</a>
+					<a class="mui-control-item" href="#parent-item-2">父选项卡2</a>
+				</div>
+			</nav>
+			<div style="height:50px"></div>
+		<!--	<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>-->
+
+			<div class="mui-slider-group">
+
+				<div class="mui-slider-item mui-control-content mui-active" id='parent-item-1'>
+					<div style="text-align: center;">父选项卡1内容</div>
+				</div>
+
+				<div class="mui-slider-item mui-control-content" id='parent-item-2'>
+					<div style="text-align: center;">父选项卡2内容</div>
+					<div class="mui-slider child-slider">
+
+						<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<a class="mui-control-item mui-active" href="#child-item-1">子选项卡1</a>
+							<a class="mui-control-item" href="#child-item-2">子选项卡2</a>
+							<a class="mui-control-item" href="#child-item-3">子选项卡3</a>
+						</div>
+						<div id="sliderProgressBar-child" class="mui-slider-progress-bar mui-col-xs-4"></div>
+
+						<div class="mui-slider-group">
+
+							<div class="mui-slider-item mui-control-content mui-active" id='child-item-1'>
+								子选项卡1内容
+							</div>
+
+							<div class="mui-slider-item mui-control-content" id='child-item-2'>
+								子选项卡2内容
+							</div>
+
+							<div class="mui-slider-item mui-control-content" id='child-item-3'>
+								子选项卡3内容
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//父选项卡2回父选项卡1
+			document.querySelector('.child-slider .mui-slider-group').addEventListener('swiperight', function(e) {
+				mui(".parent-slider").slider().gotoItem(0);
+			});
+		</script>
+	</body>
+
+</html>

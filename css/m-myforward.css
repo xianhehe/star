@@ -1,0 +1,158 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #2b2938;
+}
+.mui-bar-nav.mui-bar .mui-icon{
+    margin-right: -.1rem;
+    margin-left: -.1rem;
+    padding-right: .1rem;
+    padding-left: .1rem;
+    font-size: .24rem;
+    position: relative;
+    z-index: 20;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+.mui-bar .mui-title{
+    color:#fff;
+    font-size:.16rem;  
+    right: .4rem;
+    left: .4rem;
+    height: .44rem;
+    line-height: .44rem;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;s
+}
+.mui-icon-extra-heart-filled{
+    font-size: 15px;
+}
+.mui-icon-trash{
+    font-size: 22px;
+}
+
+.mui-bar-nav{
+    height: .44rem;
+    line-height: .44rem;
+    background-color: #15141b;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.mui-icon-left-nav{
+    color: #fff;
+}
+
+.mui-bar-nav~.mui-content{padding-top: .44rem;}
+.mui-content>.mui-table-view:first-child{
+    margin-top: 0;
+}
+
+.mui-table-view-cell{
+    padding: 0.12rem 0.2rem;
+}
+.mui-table-view-cell.mui-active{
+    background-color: #3a3846;
+}
+/*列表背景*/
+.mui-content,
+.mui-table-view-cell{
+    background-color: #3a3846;
+}
+/*边界线*/
+.mui-table-view-cell:after{
+    left: 0;
+}
+/*列表图*/
+.goVideoDetails img{
+    width: 0.71rem;
+    height: 0.71rem;
+    float: left;
+    margin-right: 0.1rem;
+}
+.mui-media-body>p{
+    line-height: 0.24rem;
+}
+.viedoname{
+    font-size: 0.13rem;
+    color: #fff;
+}
+/*两行视频名称样式*/
+.mui-table-view-cell>a:not(.mui-btn){
+    white-space: normal;
+}
+.mui-media-body .tworow{
+    line-height: 0.15rem;
+}
+
+.author,
+.num{
+    font-size: 0.12rem;
+}
+.date{
+    font-size: 0.1rem;
+}
+
+
+.mui-icon-extra{
+    color: #8F8F94;
+}
+.active {
+    color: #df236a;
+}
+
+
+.mui-table-view:before{height:0px}
+
+.header{
+	padding-bottom: 0.10rem;
+}
+.title{
+	float: left; 
+	width: 92%;
+	font-size: 0.13rem;
+	color: #fff;
+}
+.favour{
+    float: left;
+}
+.date{
+	float: right;
+}
+.goVideoDetails{
+    padding: .09rem .15rem .1rem .1rem;
+    background-color: #2b2938;
+    border-radius: 0.1rem;
+}
+
+.mui-table-view-cell > a:not(.mui-btn).mui-active{
+    background-color: #2b2938;
+}
+.backImg{
+    width: 100%;
+    height: 4.8rem;
+    background: url(../images/sweet.jpg) no-repeat center;
+    position: relative;
+}
+.backImg span{
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #504f5b;
+    line-height: 0.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0.6rem;
+}
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>VideoDetails</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet/less" type="text/css" href="../css/m-videodetails.less" />
+		<script src="../js/less-1.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+	</head>
+
+	<body style="background: rgb(43,41,56);">
+		<section class="content">
+			<div class="recommend">
+				<div class="reContent">
+					<div class="reImg">
+						<div class="messHeader">
+							<span class="iconfont return">&#xe602;</span>
+							<h2 class="videoTitle"></h2>
+						</div>
+						<!--<video src="../images/Shift.mp4" width="100%" height="100%" autoplay="autoplay" style="position: relative;" controls="controls" loop="loop">
+							当前浏览器不支持 video直接播放，点击这里下载视频
+						</video>-->
+					</div>
+				</div>							
+			</div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="reContent">
+						<ul class="reShare">
+							<li><a class="share" href="#middlePopover"><i class="iconfont">&#xe60a;</i>&nbsp;&nbsp;分享</a></li>
+							<li class="gocomment"><i class="iconfont">&#xe610;</i>&nbsp;&nbsp;评论</li>
+						</ul>
+					</div>
+					<div class="focus">
+						<ul></ul>
+					</div>			
+					<div class='other'>
+						<span>|</span><span>TA的热门视频</span>
+					</div>
+					<div class="hot">
+						<ul></ul>
+					</div>
+					<div class='other'>
+						<span>|</span><span>推荐</span>
+					</div>
+					<div class="hot1"></div>
+					
+				</div>		
+			</div>		
+		</section>
+		
+		<div id="middlePopover" class="mui-popover">	
+			<ul class="shareList clearfix -mob-share-list">
+				<li class="-mob-share-weibo"><a class="sina" href="javascript:void(0);"><span class="iconfont">&#xe61a;</span><span class="icontext">新浪</span></a>
+				</li>
+				<li class="-mob-share-qq"><a class="qq" href="javascript:void(0);"><span class="iconfont">&#xe616;</span><span class="icontext">QQ好友</span></a>
+				</li>
+				<li class="-mob-share-qzone"><a class="qqZone" href="javascript:void(0);"><span class="iconfont">&#xe617;</span><span class="icontext">QQ空间</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin"><a class="weixin" href="javascript:void(0);"><span class="iconfont">&#xe615;</span><span class="icontext">微信好友</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin"><a class="friend" href="javascript:void(0);"><span class="iconfont">&#xe619;</span><span class="icontext">朋友圈</span></a>
+				</li>
+				<li><a class="star" href="javascript:void(0);"><img src="../images/logo_05.png" alt="" /><span class="icontext">希望之星</span></a>
+				</li>
+				<li><a class="report" href="#reportPopover" href="javascript:void(0);"><span class="iconfont">&#xe618;</span><span class="icontext">举报</span></a>
+				</li>
+			</ul>
+			<button id="channel1" class="cancle">取消</button>
+		</div>
+		
+		<div id="reportPopover" class="mui-popover">
+			<div class="reportList">
+				<ul class="clearfix">
+					<li>广告</li>
+					<li>色情</a></li>
+					<li>政治敏感</a></li>
+					<li>人身攻击</a></li>
+					<li>其他</li>
+				</ul>		
+			</div>
+			<button id="channel2" class="cancle">取消</button>
+		</div>
+		
+		<div id="starPopover" class="mui-popover">
+			<div class="startList">
+				<h4 class="star-title">转发到我的Outlook</h4>
+				<textarea class="star-text" name="star-text" rows="3" cols="20" maxlength="20">说点什么吧(20字以内)</textarea>
+				<dl class="star-content">
+				</dl>
+				<button id="star-btn" disabled="disabled">转发</button>
+				<span id="star-close"></span>
+			</div>
+		</div>
+		
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/videodetails.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/layer/layer.m.js" type="text/javascript" charset="utf-8"></script>
+		<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=178ebbfdd38af"></script>
+		<script>
+			var height = document.documentElement.clientHeight||document.body.clientHeight;
+			$("#middlePopover").css("height",height);
+			mui('.mui-scroll-wrapper').scroll({
+		    	indicators: false
+			});
+		</script>
+
+	</body>
+
+</html>

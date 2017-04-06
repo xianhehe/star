@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">	
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="../css/m-mywardload.less"/>
+		<style type="text/css">
+			.mui-table-view-cell > a:not(.mui-btn).mui-active{
+			    background-color: #3a3846;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的上传</h1>
+		</header>
+		
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			
+			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../images/upload1.jpg">
+						<div class="mui-media-body">
+							<p class="viedoname">English Show</p>
+							<p class="date">2016/06/01</p>
+							<p><span class="mui-icon-extra mui-icon-extra-heart-filled"></span>300</p>		
+							
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../images/upload2.jpg">
+						<div class="mui-media-body">
+							<p class="viedoname">时间都去哪啦，科比都退役了啊</p>
+							<p class="date">2016/06/01</p>
+							<p><span class="mui-icon-extra mui-icon-extra-heart-filled"></span>300</p>		
+							
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../images/upload3.jpg">
+						<div class="mui-media-body">
+							<p class="viedoname tworow">天使的翅膀啊！你咋还不着地呢？花都谢了啊花都谢了啊</p>
+							<p class="date">2016/06/01</p>
+							<p><span class="mui-icon-extra mui-icon-extra-heart-filled"></span>300</p>		
+							
+						</div>
+					</a>
+				</li>		
+			</ul>
+		</div>
+
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/myupload.js"></script>
+</html>

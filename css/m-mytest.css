@@ -1,0 +1,202 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 100px;
+  background: #fff;
+}
+.m-mytest {
+  height: 100%;
+  width: 100%;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+  -ms-flex-direction: column;
+  /* WP IE 10 */
+  -moz-flex-direction: column;
+  /* FF */
+  flex-direction: column;
+  /* android 4.4 */
+  overflow: hidden;
+  background-color: #2b2938;
+}
+.m-mytest .testHeader {
+  width: 100%;
+  height: 0.44rem;
+  background-color: #14141b;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-mytest .testHeader > span {
+  width: 0.44rem;
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  color: #fff;
+  font-size: 0.2rem;
+}
+.m-mytest .testHeader > h2 {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  color: #868686;
+  font-size: 0.16rem;
+  font-weight: 100;
+}
+.m-mytest .sContent {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  width: 100%;
+  background-color: #282938;
+}
+.m-mytest .sContent .testContent {
+  width: 100%;
+  height: 0.94rem;
+  background-color: #2b2938;
+}
+.m-mytest .sContent .testContent > p {
+  height: 0.47rem;
+  width: 100%;
+  text-align: center;
+  color: #868686;
+  font-size: 0.13rem;
+}
+.m-mytest .sContent .testContent > p:nth-child(1) {
+  line-height: 0.65rem;
+}
+.m-mytest .sContent .testContent > p:nth-child(2) {
+  line-height: 0.25rem;
+}
+.m-mytest .sContent .Num {
+  width: 100%;
+  height: 0.57rem;
+  border-bottom: 0.01rem solid #373541;
+  background-color: #24222f;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.18rem 0.13rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-mytest .sContent .Num > input {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 100%;
+  line-height: 0.2rem;
+  color: #868686;
+  font-size: 0.12rem;
+  border: none;
+  outline: medium;
+  background-color: #24222f;
+}
+.m-mytest .sContent .Num > span {
+  width: 0.2rem;
+  height: 100%;
+  line-height: 0.2rem;
+  text-align: center;
+  font-size: 0.2rem;
+  color: #fff;
+  display: none;
+}
+.m-mytest .sContent .testSub {
+  width: 100%;
+  height: 1.3rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-mytest .sContent .testSub > p {
+  width: 90%;
+  height: 0.45rem;
+  margin: auto;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.15rem;
+  background-color: #605f6a;
+  -webkit-border-radius: 0.05rem;
+  -moz-border-radius: 0.05rem;
+  border-radius: 0.05rem;
+}

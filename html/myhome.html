@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>他人主页</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myhome.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<style>
+			.backImg {
+				width: 100%;
+				height: 3rem;
+				background: url(../images/sweet.jpg) no-repeat center;
+				background-size: 60%;
+			}
+			
+			.backImg span {
+				padding-top: 75%;
+				display: block;
+				width: 100%;
+				height: 0.2rem;
+				text-align: center;
+				font-size: 0.2rem;
+				color: #504f5b;
+				line-height: 0.2rem;
+			}
+			
+			.active>p {
+				color: #cb2177;
+			}
+			
+			#home-hot-nav li p {
+				margin-bottom: 0;
+			}
+			
+			#home-hot-nav li {
+				line-height: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="remyinfo">
+			<div class="reImg">
+				<img src="../images/img1.jpg" />
+				<div class="head">
+					<span class="iconfont" onclick="javascript:history.go(-1);">&#xe602;</span>
+				</div>
+			</div>
+			<div class='avator'></div>
+		</div>
+		<div id="home-swiper">			
+			<div class="mui-slider" id="home-swiper2">
+				<ul id="home-hot-nav" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<li>
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							<span id="videoNum"></span>
+							<span>视频</span>
+						</a>
+					</li>
+					<li class='gotranslate'>
+						<a class="mui-control-item" href="#item2mobile">
+							<span id="forwardNum"></span>
+							<span>转发</span>
+						</a>
+					</li>
+					<li>
+						<a class="mui-control-item" href="#item3mobile">
+							<span id="attentionNum"></span>
+							<span>关注</span>
+						</a>
+					</li>
+					<li>
+						<a class="mui-control-item" href="#item4mobile">
+							<span id="fansNum"></span>
+							<span>粉丝</span>
+						</a>
+					</li>
+				</ul>
+				<div class="mui-slider-group" id="home-hot-swiper">
+					<!-- 视频 -->
+					<div class="mui-scroll-wrapper mui-slider-item mui-control-content mui-active" id="item1mobile">													
+						<!--数据列表-->
+						<div class="mui-scroll">
+							<div id="videoTab" class="recommend"></div>
+						</div>														
+					</div>
+					<!-- 转发 -->
+					<div class="mui-scroll-wrapper mui-slider-item mui-control-content" id="item2mobile">											
+						<!--数据列表-->
+						<div class="mui-scroll">
+							<div id="forwardTab" class="recommend"></div>									
+						</div>
+					</div>
+					<!-- 关注 -->
+					<div class="mui-scroll-wrapper mui-slider-item mui-control-content" id="item3mobile">										
+						<!--数据列表-->
+						<div class="mui-scroll">
+							<ul id="attentionTab" class="recommend"></ul>
+						</div>											
+					</div>
+					<!-- 粉丝 -->
+					<div class="mui-scroll-wrapper mui-slider-item mui-control-content" id="item4mobile">						
+						<!--数据列表-->
+						<div class="mui-scroll">
+							<ul id="followTab" class="recommend"></ul>	
+						</div>									
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+
+		<div id="middlePopover" class="mui-popover">
+			<ul class="shareList clearfix -mob-share-list">
+				<li class="-mob-share-weibo">
+					<a class="sina" href="javascript:void(0);"><span class="iconfont">&#xe61a;</span><span class="icontext">新浪</span></a>
+				</li>
+				<li class="-mob-share-qq">
+					<a class="qq" href="javascript:void(0);"><span class="iconfont">&#xe616;</span><span class="icontext">QQ好友</span></a>
+				</li>
+				<li class="-mob-share-qzone">
+					<a class="qqZone" href="javascript:void(0);"><span class="iconfont">&#xe617;</span><span class="icontext">QQ空间</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin">
+					<a class="weixin" href="javascript:void(0);"><span class="iconfont">&#xe615;</span><span class="icontext">微信好友</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin">
+					<a class="friend" href="javascript:void(0);"><span class="iconfont">&#xe619;</span><span class="icontext">朋友圈</span></a>
+				</li>
+				<li>
+					<a class="star" href="javascript:void(0);"><img src="../images/logo_05.png" alt="" /><span class="icontext">希望之星</span></a>
+				</li>
+				<li>
+					<a class="report" href="#reportPopover" href="javascript:void(0);"><span class="iconfont">&#xe618;</span><span class="icontext">举报</span></a>
+				</li>
+			</ul>
+			<button id="channel1" class="cancle">取消</button>
+		</div>
+
+		<div id="reportPopover" class="mui-popover">
+			<div class="reportList">
+				<ul class="clearfix">
+					<li>广告</li>
+					<li>色情</a>
+					</li>
+					<li>政治敏感</a>
+					</li>
+					<li>人身攻击</a>
+					</li>
+					<li>其他</li>
+				</ul>
+			</div>
+			<button id="channel2" class="cancle">取消</button>
+		</div>
+
+		<div id="starPopover" class="mui-popover">
+			<div class="startList">
+				<h4 class="star-title">转发到我的Outlook</h4>
+				<textarea class="star-text" name="star-text" rows="3" cols="20" maxlength="20">说点什么吧(20字以内)</textarea>
+				<dl class="star-content">
+				</dl>
+				<button id="star-btn" disabled="disabled">转发</button>
+				<span id="star-close"></span>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.pullToRefresh.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.pullToRefresh.material.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/myhome.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/layer/layer.m.js" type="text/javascript" charset="utf-8"></script>
+		<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=178ebbfdd38af"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			var height = document.documentElement.clientHeight || document.body.clientHeight;
+			$("#middlePopover").css("height", height);
+		</script>
+
+	</body>
+
+</html>

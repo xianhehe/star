@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="../css/m-mynews.less" />
+		<script src="../js/less-1.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<script type="text/javascript">
+			document.addEventListener('touchmove', function(e) {
+				e.preventDefault();
+			}, false);
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h2 class="mui-title title">我的消息</h2>
+			<button class="mui-btn  mui-btn-link mui-pull-right edit">编辑</button>
+		</header>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class='mui-scroll'>
+				<div class="mui-table-view">
+					<!--加载内容区域-->
+					<!--<ul class="list-li" dataid="news.id" action-type="go.mydetails">
+						<li class="mui-table-view-cell con">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle">
+								
+								<div class="sysTime">
+									<p class="newstitle">
+										news.title
+									</p>
+									<span>news.lastUpdatedTime.substring(0,10)</span>
+								</div>
+								<div class="syeCont">
+									<p class="newsbody">news.body</p>
+									<div><span id="redblo" style="display:none"></span></div>
+								</div>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src='../js/mui.pullToRefresh.js'></script>
+	<script src="../js/mui.pullToRefresh.material.js"></script>
+	<!--<script src="../js/iscroll-probe.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/mynews.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,495 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+}
+html {
+  font-size: 100px;
+  background: #fff;
+}
+.m-menu {
+  width: 100%;
+  height: 100%;
+  background: #282938;
+  position: relative;
+}
+.m-menu .sHeader {
+  width: 100%;
+  height: 0.44rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0.1rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+  background: #22202d;
+}
+.m-menu .sHeader > ul {
+  height: 0.44rem;
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: #96969b 1px solid;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sHeader > ul .btn-search {
+  width: 0.42rem;
+  height: 100%;
+  line-height: 0.42rem;
+  background: none;
+  border: none;
+  font-size: 0.16rem;
+  text-align: center;
+  color: #878787;
+  outline: none;
+}
+.m-menu .sHeader > ul li {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sHeader > ul li > input {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  width: 100%;
+  height: 100%;
+  line-height: 0.42rem;
+  color: #fff;
+  font-size: 0.14rem;
+  border: none;
+  outline: medium;
+  background: #22202d;
+}
+.m-menu .sHeader > ul li .icon-close {
+  width: 0.26rem;
+  height: 0.42rem;
+  line-height: 0.44rem;
+  color: #fff;
+  font-size: 0.16rem;
+  text-align: center;
+  display: none;
+}
+.m-menu .sHeader .sRemove {
+  width: 0.6rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.14rem;
+}
+.m-menu .sPage1 {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  width: 100%;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+  -ms-flex-direction: column;
+  /* WP IE 10 */
+  -moz-flex-direction: column;
+  /* FF */
+  flex-direction: column;
+  /* android 4.4 */
+}
+.m-menu .sPage1 .sNav {
+  width: 100%;
+  height: 0.36rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sPage1 .sNav .sTest {
+  height: 0.36rem;
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  line-height: 0.36rem;
+  color: #ec1c60;
+  font-size: 0.12rem;
+  text-indent: 0.24rem;
+  position: relative;
+  background: #22202d;
+}
+.m-menu .sPage1 .sNav .sTest:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.12rem;
+  border-left: #ec1c60 solid 0.02rem;
+  top: 0.11rem;
+  left: 0.15rem;
+  background: #22202d;
+}
+.m-menu .sPage1 .sNav #moreS {
+  width: 0.6rem;
+  height: 0.36rem;
+  text-align: center;
+  line-height: 0.36rem;
+  font-size: 0.12rem;
+  color: #ec1c60;
+  text-decoration: underline;
+  background: #22202d;
+}
+.m-menu .sPage1 .sNav #moreS a {
+  margin: 0;
+  padding: 0;
+  width: 0.6rem;
+  height: 0.36rem;
+  text-align: center;
+  line-height: 0.36rem;
+  font-size: 0.12rem;
+  color: #ec1c60;
+  text-decoration: underline;
+  background: #22202d;
+}
+.m-menu .sPage1 .sNav #moreS .page_nomore {
+  margin: 0;
+  padding: 0;
+  width: 0.6rem;
+  height: 0.36rem;
+  text-align: center;
+  line-height: 0.36rem;
+  font-size: 0.12rem;
+  color: #ec1c60;
+  text-decoration: underline;
+  background: #22202d;
+}
+.m-menu .sPage1 .sNav1 {
+  padding-top: 0;
+  background-color: #282938;
+}
+.m-menu .sPage1 .sHot {
+  width: 100%;
+  min-height: 0.36rem;
+  background-color: #282938;
+  color: #fff;
+  overflow: hidden;
+}
+.m-menu .sPage1 .sHot > ul {
+  overflow: hidden;
+}
+.m-menu .sPage1 .sHot > ul > a {
+  float: left;
+  height: 0.22rem;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  padding: 0 0.09rem;
+  margin: 0.12rem 0.1rem;
+  margin-right: 0;
+  font-size: 0.12rem;
+  line-height: 0.22rem;
+}
+.m-menu .sPage1 .related-user {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #373845;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sPage1 .related-user > ul {
+  margin-top: .12rem;
+  width: 100%;
+  overflow: hidden;
+}
+.m-menu .sPage1 .related-user > ul > li {
+  width: 24%;
+  float: left;
+}
+.m-menu .sPage1 .related-user > ul > li span {
+  width: 100%;
+  display: block;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.12rem;
+}
+.m-menu .sPage1 .related-user > ul > li > a {
+  width: 100%;
+  height: 0.64rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sPage1 .related-user > ul > li > a img {
+  display: block;
+  width: 0.64rem;
+  height: 0.64rem;
+  margin: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.m-menu .sPage1 .related-user .gomyhome {
+  display: block;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.3rem;
+}
+.m-menu .sPage1 .related-video {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  background: #282938;
+  overflow: hidden;
+}
+.m-menu .sPage1 .related-video ul {
+  margin-right: -2%;
+  overflow: hidden;
+}
+.m-menu .sPage1 .related-video ul li {
+  float: left;
+  margin-bottom: 0.1rem;
+  margin-right: 2%;
+  width: 48%;
+  height: 2.1rem;
+  position: relative;
+}
+.m-menu .sPage1 .related-video ul li > img {
+  width: 100%;
+  height: 1.6rem;
+}
+.m-menu .sPage1 .related-video ul li .avator {
+  position: relative;
+  margin-top: 0.05rem;
+  width: 100%;
+  height: 0.22rem;
+  border-radius: 50%;
+}
+.m-menu .sPage1 .related-video ul li .avator img {
+  float: left;
+  position: absolute;
+  top: -0.15rem;
+  left: 0.1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+}
+.m-menu .sPage1 .related-video ul li .avator span {
+  float: left;
+  margin-left: 0.5rem;
+  font-size: 0.14rem;
+  color: #bfbec3;
+}
+.m-menu .sPage1 .related-video ul li .avator .fr {
+  margin-left: 0;
+  float: right;
+}
+.m-menu .sPage1 .related-video ul li h3 {
+  margin-left: 0.1rem;
+  font-size: 0.16rem;
+  color: #ffffff;
+  font-weight: normal;
+}
+.m-menu .sPage1 .related-video ul .backImg {
+  width: 100%;
+  height: 4.8rem;
+  background: url("http://192.168.1.112:8081/star/staroutlook/images/sweet.jpg") no-repeat center;
+  position: relative;
+}
+.m-menu .sPage1 .related-video ul .backImg span {
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  text-align: center;
+  font-size: 0.14rem;
+  color: #504f5b;
+  line-height: 0.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.8rem;
+}
+.m-menu .sPage1 .snewList {
+  background-color: #282938;
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+.m-menu .sPage1 .snewList li {
+  width: 100%;
+  height: 0.41rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 0.01rem solid #96969b;
+  padding-left: 0.15rem;
+  display: -moz-box;
+  /* Firefox */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  /* Safari */
+  display: -webkit-flex;
+  /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.m-menu .sPage1 .snewList li > p {
+  webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  -ms-flex: 1;
+  /* WP IE 10 */
+  -moz-box-flex: 1;
+  /* FF */
+  flex: 1;
+  /* android 4.4 */
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.12rem;
+  color: #fff;
+}
+.m-menu .sPage1 .snewList li > span {
+  width: 0.4rem;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  color: #fff;
+}
+.m-menu .sPage1 .snewList li:last-child {
+  border-bottom: none;
+}

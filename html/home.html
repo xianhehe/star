@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+	</head>
+
+	<body id="main" class="mui-slider">
+		<!--头部-->
+		<div class="messHeader">
+			<span></span>
+			<div class="centerfont">
+				<ul id="indexSelect" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<li class="twonormal"><a class="mui-control-item mui-active" href="#matchRefresh">大赛</a></li>
+					<li class="twonormal"><a class="mui-control-item" href="#xiuRefresh">我秀</a></li>
+				</ul>
+			</div>
+			<span id="goSelect" class="iconfont">&#xe60e;</span>
+		</div>
+		<!--主体-->
+		<div class="mui-slider-group" id="home-swiper">
+		
+				<!--大赛slide-->
+				<div class="home-focus mui-scroll-wrapper mui-slider-item mui-control-content mui-active" id="matchRefresh">
+					<div class="mui-scroll">
+						<!--轮播图-->
+						<div class="swiper-container" id='upswiper'></div>
+						<div class='hot-nav'>
+							<span></span><b>热门视频</b>
+						</div>
+						<!--大赛视频列表-->
+						<section class='match'>
+							<ul class="matchList" id="matchList"></ul>
+						</section>
+					</div>
+				</div>
+				<!--我秀slide-->
+				<div id="xiuRefresh" class="mui-scroll-wrapper mui-slider-item mui-control-content">
+					<div id="slider" class="mui-slider mui-fullscreen">
+						<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<div class="mui-scroll">
+								<a class="mui-control-item mui-active" href="#item1mobile">热门</a>
+							</div>
+						</div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div id="scroll1" class="mui-scroll-wrapper">
+									<div class="mui-scroll match">
+										<ul class="mui-table-view matchList">
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content">
+								<div class="mui-scroll-wrapper">
+									<div class="mui-scroll match">
+										<ul class="mui-table-view matchList">
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="item3mobile" class="mui-slider-item mui-control-content">
+								<div class="mui-scroll-wrapper">
+									<div class="mui-scroll match">
+										<ul class="mui-table-view matchList">
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="item4mobile" class="mui-slider-item mui-control-content">
+								<div class="mui-scroll-wrapper">
+									<div class="mui-scroll match">
+										<ul class="mui-table-view matchList">
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+		</div>
+
+	</body>
+	<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.pullToRefresh.js"  charset="utf-8"></script>
+	<script src="../js/mui.pullToRefresh.material.js" charset="utf-8"></script>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/home.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/layer/layer.m.js" type="text/javascript" charset="utf-8"></script>
+</html>

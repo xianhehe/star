@@ -1,0 +1,219 @@
+@charset "utf-8";
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-size: 100px;
+    //background: #f2f2f2;
+    background: #fff;
+}
+body {
+    height: 100%;
+    color: white;
+    background: #2b2938; //  display: flex;
+    //  flex-direction: column;
+    div.container {
+        width: 100%;
+        height: 0.44rem;
+        margin: 0 auto;
+        display: flex;
+        background: #14141b;
+        div.thr {
+            line-height: 0.44rem;
+            color: #fff;
+            font-size: 0.18rem;
+            text-align: center;
+            &:nth-child(1) {
+                width: 0.4rem;
+                height: 100%;
+            }
+            &:nth-child(2) {
+                flex: 1;
+                height: 100%;
+                font-size: 0.18rem;
+            }
+            &:nth-child(3) {
+                width: 0.63rem;
+                height: 100%;
+                font-size: 0.16rem;
+                color: #c5c5c5;
+            }           
+            &.active {
+                color: #21b100;
+            }
+        }
+    }
+    .content {
+        //  flex: 1;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        height: 5rem;
+        background: #2b2938;
+        div {
+            font-size: 0.2rem;
+            div.name {
+                position: absolute;
+                top: 30px;
+                right: 10px;
+                display: none;
+            }
+            div.pass {
+                position: absolute;
+                top: 80px;
+                right: 10px;
+                display: none;
+            }
+            form {
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 0.2rem;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                input {
+                    width: 100%;
+                    height: 0.48rem;
+                    border: 0;
+                    outline: none;
+                    background: #22202d;
+                    text-indent: 0.21rem;
+                    color: white;
+                    &:nth-child(1) {
+                        border-bottom: 1px solid #4e4d57;
+                    }
+                }
+                div.yan {
+                    display: flex;
+                    margin-top: 0.2rem;
+                    width: 100%;
+                    height: 0.48rem;
+                    border: 0;
+                    outline: none;
+                    background: #22202d;
+                    text-indent: 0.21rem;
+                    color: white;
+                    input.code {
+                        flex: 6;
+                        height: 0.48rem;
+                        border: 0;
+                        outline: none;
+                        background: #22202d;
+                        text-indent: 0.21rem;
+                        color: white;
+                    }
+                    button.registers {
+                        flex: 3;
+                        height: 0.235rem;
+                        margin: auto;
+                        border-radius: 5px;
+                        background: #ff296a;
+                        border: 0;
+                        outline: 0;
+                        color: white;
+                        font-size: 15px;
+                        display: block; //  &:nth-child(2){
+                        //      display: none;
+                        //  }
+                    }
+                }
+                button.login {
+                    width: 87%;
+                    height: 0.44rem;
+                    margin: 0.2rem auto;
+                    border-radius: 10px;
+                    background: #605f6a;
+                    border: 0;
+                    outline: 0;
+                    color: white;
+                    font-size: 15px;
+                }
+                button.reg {
+                    width: 87%;
+                    height: 0.44rem;
+                    margin: 0.2rem auto;
+                    border-radius: 10px;
+                    background: #605f6a;
+                    border: 0;
+                    outline: 0;
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+            .server {
+                margin: 0 auto;
+                input[type="checkbox"] {
+                    float: left;
+                    width: 0.13rem;
+                    height: 0.13rem;
+                    border: 1px solid #4e4d57;
+                    content: close-quote;
+                    background-color: #22202d;
+                }
+                span {
+                    float: left;
+                    text-indent: 5px;
+                    font-size: 10px;
+                    color: #4e4d57;
+                    a {
+                        color: #4e4d57;
+                    }
+                }
+            }
+        }
+        .appear {
+            display: block;
+        }
+    }
+    footer {
+        //  flex:1;
+        width: 100%;
+        height: 1.93rem;
+        background: #2b2938;
+        bottom: 0;
+        p {
+            font-size: 14px;
+            line-height: 0.54rem;
+            text-align: center;
+            border-bottom: 1px solid #C5C5C5;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            li.iconfont {
+                flex: 1;
+                display: inline-block;
+                line-height: 1.395rem;
+                text-align: center;
+                font-size: 54px;
+                &:nth-child(1) {
+                    color: #ff1515;
+                }
+                &:nth-child(2) {
+                    color: #1488ff;
+                }
+                &:nth-child(3) {
+                    color: #36ad49;
+                }
+            }
+        }
+    }
+}

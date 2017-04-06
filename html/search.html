@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>StarOutLook</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet/less" type="text/css" href="../css/m-search.less" />
+		<script src="../js/less-1.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+	</head>
+	<script type="text/javascript">
+		document.addEventListener('touchmove', function(e) {
+			e.preventDefault();
+		}, false);
+	</script>
+
+	<body>
+		<div class="seaHeader">
+			<span></span>
+			<h2 class="title">发现</h2>
+			<span class='iconfont btn-search'>&#xe60c;</span>
+		</div>
+		<div class="content " id="index-scroll">
+			<div>
+				<p class='mTest'>赛事</p>
+				<div class="mSearch">
+					<ul>
+						<!--<li>
+							<a href="international.html"><img src="../images/img1.jpg" /></a>
+						</li>
+						<li>
+							<a href="music.html"><img src="../images/img2.jpg" /></a>
+						</li>
+						<li>
+							<a href="opera.html"><img src="../images/img3.jpg" /></a>
+						</li>
+						<li>
+							<a href="theme.html"><img src="../images/img4.jpg" /></a>
+						</li>-->
+					</ul>
+				</div>
+				<!--明星榜
+				<p class='mTest mStar gostar'>明星<span action-type="tap.star">查看全部明星榜<i class='iconfont'>&#xe600;</i></span></p>
+				<ul class="mStarList"></ul>-->
+				<p class='mTest'>推荐</p>
+				<div class="recommend"></div>
+			</div>
+		</div>
+
+		<nav class="mui-bar mui-bar-tab" id="lastbest">
+			<a class="mui-tab-item" href="../index.html">
+				<span class="mui-icon iconfont">&#xe609;</span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="search.html">
+				<span class="mui-icon iconfont">&#xe611;</span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" href="active.html">
+				<span class="mui-icon iconfont">&#xe612;</span>
+				<span class="mui-tab-label">动态</span>
+			</a>
+			<a class="mui-tab-item" href="myinfo.html">
+				<span class="mui-icon iconfont">&#xe60d;</span>
+				<span class="mui-tab-label">我</span>
+			</a>
+		</nav>
+		
+		<div id="middlePopover" class="mui-popover">	
+			<ul class="shareList clearfix -mob-share-list">
+				<li class="-mob-share-weibo"><a class="sina" href="javascript:void(0);"><span class="iconfont">&#xe61a;</span><span class="icontext">新浪</span></a>
+				</li>
+				<li class="-mob-share-qq"><a class="qq" href="javascript:void(0);"><span class="iconfont">&#xe616;</span><span class="icontext">QQ好友</span></a>
+				</li>
+				<li class="-mob-share-qzone"><a class="qqZone" href="javascript:void(0);"><span class="iconfont">&#xe617;</span><span class="icontext">QQ空间</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin"><a class="weixin" href="javascript:void(0);"><span class="iconfont">&#xe615;</span><span class="icontext">微信好友</span></a>
+				</li>
+				<li style="display: none;" class="-mob-share-weixin"><a class="friend" href="javascript:void(0);"><span class="iconfont">&#xe619;</span><span class="icontext">朋友圈</span></a>
+				</li>
+				<li><a class="star" href="javascript:void(0);"><img src="../images/logo_05.png" alt="" /><span class="icontext">希望之星</span></a>
+				</li>
+				<li><a class="report" href="#reportPopover" href="javascript:void(0);"><span class="iconfont">&#xe618;</span><span class="icontext">举报</span></a>
+				</li>
+			</ul>
+			<button id="channel1" class="cancle">取消</button>
+		</div>
+		
+		
+		<div id="reportPopover" class="mui-popover">
+			<div class="reportList">
+				<ul class="clearfix">
+					<li>广告</li>
+					<li>色情</a></li>
+					<li>政治敏感</a></li>
+					<li>人身攻击</a></li>
+					<li>其他</li>
+				</ul>		
+			</div>
+			<button id="channel2" class="cancle">取消</button>
+		</div>
+		
+		<div id="starPopover" class="mui-popover">
+			<div class="startList">
+				<h4 class="star-title">转发到我的Outlook</h4>
+				<textarea class="star-text" name="star-text" rows="3" cols="20" maxlength="20">说点什么吧(20字以内)</textarea>
+				<dl class="star-content">
+				</dl>
+				<button id="star-btn" disabled="disabled">转发</button>
+				<span id="star-close"></span>
+			</div>
+		</div>	
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/iscroll-probe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/search.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/layer/layer.m.js" type="text/javascript" charset="utf-8"></script>
+		<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=178ebbfdd38af"></script>
+		<script>		
+			var height = document.documentElement.clientHeight||document.body.clientHeight;
+			$("#middlePopover").css("height",height);			
+		</script>	
+	</body>
+</html>
